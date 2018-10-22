@@ -19,13 +19,12 @@ with the conda environnment provided by P.Poulain, the script and the animation 
 
 ## Use: 
 
-Unzip the folder containing 4 files: 
-* the README.md file you are reading right now, 
-* the GOL_notebook.ipynb which is the jupyter notebook
-* gol_module.py a python3 module containing the function I created
-* gol_execute.py another python3 module containing the behind the scenes for the animation.
+Download the repository, 3 files are needed to run the Game of Life : 
+* the GOL_notebook.ipynb : a jupyter notebook containing the main functions. You will play the game from this notebook and choose the parameters
+* gol_module.py : a python3 module containing the function I created
+* gol_execute.py : another python3 module containing the behind the scenes for the animation.
 
-Open your jupyter notebook and from there open the GOL_notebook.ipynb file. Simply run cell by cell the notebook. After running the first cell (which can take around 30s), choose the parameters and the patterns you want for the game of life. Once it's done, run the second cell just below (it can also take several seconds). Normally, the animation should appear and a gol.gif file should have been added to your folder with the corresponding gif. 
+Open your jupyter notebook and from there open the GOL_notebook.ipynb file. Simply run cell by cell the notebook. After running the first cell (which can take around 30s), choose the parameters and the patterns you want to display for the game of life. Once it's done, run the second cell just below (it can also take several seconds). Normally, the animation should appear and a gol.gif file should have been added to your folder with the corresponding gif. 
 
 If you have the message "MovieWriter imagemagick unavailable.". It can happend. Check your folder to see if you still have the gif. This is a reported bug. 
  
