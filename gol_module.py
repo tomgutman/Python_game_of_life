@@ -112,18 +112,18 @@ def init_pattern(matrix, pattern, i, j):
         matrix[i: i+3, j: j+4] = stairs
     if pattern == 'gliders (3, 3) n = 1103':
         gliders = np.array([[[0, 1, 1], [1, 1, 0], [0, 1, 0]]])
-        matrix[i: i+3, j: j+3] = gliders (3, 3) n = 1103
+        matrix[i: i+3, j: j+3] = gliders 
     if pattern == 'glider (3, 3) n = inf':
         glider = np.array([[[0, 1, 1], [1, 0, 1], [0, 0, 1]]])
-        matrix[i: i+3, j: j+3] = glider (3, 3) n = inf
+        matrix[i: i+3, j: j+3] = glider 
     if pattern == 'pulsar (5, 5) n = 3':
         pulsar = np.array([[[1, 0, 1, 0, 1], [1, 0, 0, 0, 1],
                             [1, 0, 0, 0, 1], [1, 0, 0, 0, 1],
                             [1, 0, 1, 0, 1]]])
-        matrix[i: i+5, j: j+5] = pulsar (5, 5) n = 3
+        matrix[i: i+5, j: j+5] = pulsar 
     if pattern == 'pentadecathlon (1, 10) n = 15':
-        panthadecathlon = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
-        matrix[i, j: j+10] = pentadecathlon (1, 10) n = 15
+        OK = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+        matrix[i, j: j+10] = OK 
     if pattern == 'gosper glider gun (9, 36) n>=30':
         gosper_glider_gun = np.array([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                                       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -134,7 +134,7 @@ def init_pattern(matrix, pattern, i, j):
                                       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                                       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                                       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
-        matrix[i: i+9, j: j+36] = gosper glider gun (9, 36) n>=30
+        matrix[i: i+9, j: j+36] = gosper_glider_gun 
     return matrix
 
 LIBRARY = ['None',
